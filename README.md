@@ -7,7 +7,7 @@ This is my first `React` application which I created as a beginner in learning R
 
 This application takes a valid **city name** and associate [ISO 3166 Country Code](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes) as inputs and produces the following weather updates:
 
-**Location**:,
+**Location**: *city, country-code*
 
 **Temperature**: *in celcius*,
 
