@@ -23,7 +23,7 @@ This application takes a valid **city name** and associate [ISO 3166 Country Cod
 
 
 
-On leaving any field empty, the app returns the following alert message: **"Please enter name of the City and Country."**
+On leaving any field empty, the app returns the following alert message: *"Please enter name of the City and Country."*
 
 
 
