@@ -1,33 +1,145 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url('./img/WeatherAppBG.png') 50% 0 no-repeat fixed;
+  background-size: auto 100%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-family: 'Fredericka the Great', cursive;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h3 {
+  font-family: 'Cormorant Garamond', serif;
+  color: #555,
+}
+
+
+.wrapper {
+  margin-top: 10%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
-.App-link {
-  color: #61dafb;
+.main {
+  height: 90%;
+  background: rgba(255,255,255, 0.4);
+  box-shadow: 0px 13px 40px -13px rgba(0,0,0,0.75);
+  width: 80%;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title-block {
+  height: 50%;
+  background: center center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+.form-block {
+  margin: 0 auto;
+  height: 90%;
+  padding-top: 100px;
+  padding-left: 50px;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+.weather_block {
+  font-size: 20px;
+  font-family: "roboto", sans-serif;
+  letter-spacing: 1px;
+  padding-left: 72px;
+}
+
+input[type="text"] {
+  background-color: transparent;
+  border: 0;
+  border-bottom: solid 1px #17a2b8;
+  width: 30%;
+  padding-bottom: 4px;
+  color: #fff !important;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+input[type="text"] {
+    outline: none;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #DFF7FF inset;
+    -webkit-text-fill-color: #555 !important;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #aaaaaa;
+  opacity: 1; /* Firefox */
+  font-size: 12px;
+  font-style: italic;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #aaaaaa;
+  font-size: 12px;
+  font-style: italic;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #aaaaaa;
+  font-size: 12px;
+  font-style: italic;
+}
+
+button{
+  -webkit-transition: background 0.5s, border 1s, color 1.5s !important; /* safari */
+  transition: background 0.5s, border 1s, color 1.5s !important;
+}
+
+button:hover {
+  background: #ECEFF4 !important;
+  border: 1px solid #5F81AC;
+  color: #5F81AC;
+}
+
+button {
+  background: #8FBCBA;
+  color: #ffffff;
+  border:1px solid #8FBCBA;
+}
+
+.attribute {
+  color: #8FBCBA;
+  padding: 20px 0;
+  font-weight: 400;
+  border-left: 2px solid #8FBCBA;
+  padding-left: 20px;
+}
+
+
+.value {
+  color: #555;
+  font-weight: 200;
+}
+
+.error {
+  color: #8d006b;
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-weight: 200;
+  padding-left: 12px;
 }
